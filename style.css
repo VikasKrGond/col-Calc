@@ -47,7 +47,8 @@
   #bmi,
   #usd-inr,
   #inr-usd,
-  #income {
+  #income ,
+#loan {
     text-align: center;
     box-shadow: rgb(85, 84, 84) 10px 10px 10px 10px;
     width: 70%;
@@ -57,6 +58,9 @@
     padding: 40px;
     border-radius: 20px;
     background-color: white;
+  }
+ #loan label , input , select{
+      text-align: center;
   }
   .btn11 {
     margin-left: 20px;
