@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+<div class="row">
+  <div class="column left">
+    <h2>Fuctions</h2>
+    <p><a href="#bmi">BMI Calaculator </a></p>
+    <p><a href="#income">Income Tax Calulator</a></p>
+    <p><a href="#inr-usd">INR to USD Converter</a></p>
+    <p><a href="#usd-inr">USD to INR Calulator</a></p>
+  </div>
+  <div class="column right">
+    <h2 style="text-align: center; font-size: 60px;">Working Tools</h2>
+    <!-- Income Tax Calulator -->
+    <div id="income">
+      <p class="head11">Income Tax Calulator</p>
+      <label for="income">Enter your Anual Income: </label>
+      <input id="tx" type="number" placeholder="in INR"> <br>
+      <button id="usdbt" class="btn11" onclick="incomeTax()">Convert</button>
+      <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
+      <p id="tax-val"></p>
+    </div>
+    <!-- BMI Calculator -->
+    <div id="bmi">
+        <p id="bmi-head "  class="head11">BMI Calculator</p>
+        <label for="Wt ">Enter Your Weight: </label>
+        <input type="number" id="wt" placeholder="in KGs"> <br>
+        <label for="ht">Enter Your Height: </label>
+        <input type="number"  id="ht" placeholder="in m"> <br>
+        <button id="bhn1" class="btn11" onclick="bmiCal()">Calculate</button>
+        <button id="bhn2" class="btn11" onclick="document.location.reload(true)">Refresh</button>
+        <p id="bmi-val"></p>
+      </div>
+
+      <!-- for inr usd to conversion -->
+    <div id="inr-usd">
+        <p id="inrhead " class="head11">INR to USD Converter</p>
+        <label for="INR">Enter Amount: </label>
+        <input type="number" id="inr" placeholder="in INR"> <br>
+        <button id="inrbt " class="btn11" onclick="inrUSD()">Convert</button>
+        <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
+        <p id="usd-val"></p>
+    </div>
+    <!-- for usd to inr conversion -->
+    <div id="usd-inr">
+        <p id="usdhead" class="head11">USD to INR Converter</p>
+        <label for="INR">Enter Amount: </label>
+        <input type="number" id="usd" placeholder="in USD"> <br>
+        <button id="usdbt" class="btn11" onclick="usdInr()">Convert</button>
+        <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
+        <p id="inr-val"></p>
+    </div>
+
+  </div>
+</div>
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>
