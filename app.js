@@ -3,6 +3,10 @@ let ht = document.getElementById('ht');
 let inr = document.getElementById('inr');
 let usd = document.getElementById('usd');
 let tx = document.getElementById('tx');
+let loanamt= document.getElementById('loan-amt');
+let bank = document.getElementById('bank'); 
+let bankName = document.getElementById('bank').innerHTML; 
+let yrs = document.getElementById('yrs');
 
 function bmiCal() {
     let x = wt.value;
@@ -43,4 +47,14 @@ function incomeTax() {
         let tax = txamt / 30;
         document.getElementById('tax-val').innerHTML = "Sir you have INR " + txamt + " as taxable range and you have to pay INR " + tax + " as income  tax  at 30%!!!"
     }
+}
+
+function calcLoan() {
+       let p=loanamt.value;
+       let r= bank.value;
+       let t= yrs.value;
+       let x= p*(1+ r* 0.01);
+       let repay = Math.pow(x,t);
+       let ci= repay - p;
+       document.getElementById('loan-val').innerHTML="You have to Pay INR "+ repay + " on behalf of INR "+p+" loan i.e. INR "+ci+" as Intrest at "+r+"% for "+t+" years.";
 }
