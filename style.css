@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgba(0, 0, 0, 0.856);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .left {
+    width: 20%;
+    margin-top: 40px;
+    border-radius: 20px;
+    position: fixed;
+    color: white;
+    background-color:black;
+    box-shadow: rgb(22, 21, 21) 10px 10px 10px 10px;
+  
+  }
+  
+  .right {
+    margin-left: 22%;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.897);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .head11 {
+    font-size: 45px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  #bmi,
+  #usd-inr,
+  #inr-usd,
+  #income {
+    text-align: center;
+    box-shadow: rgb(85, 84, 84) 10px 10px 10px 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .btn11 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    padding: 6px;
+    border-radius: 10px;
+  }
+  
+  .btn11:hover {
+    cursor: pointer;
+    background-color:black;
+    color:white;
+  }
+  
