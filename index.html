@@ -13,6 +13,7 @@
     <h2>Fuctions</h2>
     <p><a href="#bmi">BMI Calaculator </a></p>
     <p><a href="#income">Income Tax Calulator</a></p>
+    <p><a href="#loan">Loan Calculator Calulator</a></p>
     <p><a href="#inr-usd">INR to USD Converter</a></p>
     <p><a href="#usd-inr">USD to INR Calulator</a></p>
   </div>
@@ -26,6 +27,23 @@
       <button id="usdbt" class="btn11" onclick="incomeTax()">Convert</button>
       <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
       <p id="tax-val"></p>
+    </div>
+    <div id="loan">
+        <p class="head11">Loan Calculator</p>
+        <label for="amt">Enter The Amount of Loan You Wanted : </label>
+        <input type="number" id="loan-amt" placeholder="in INR"> <br>
+        <label for="bank">Choose your Bank :</label>
+        <select name="bank-name" id="bank">
+            <option value="6.5" selected>SBI at 6.5% p.a</option>
+            <option value="7.5">PNB at 7.5% p.a.</option>
+            <option value="8.5">World Bank at 8.5% p.a.</option>
+            <option value="10.5">Soft Bank at 10.5% p.a.</option>
+        </select> <br>
+        <label for="bank">Enter Duration :</label>
+        <input id="yrs" type="number" placeholder="in yrs"> <br>
+        <button id="loan-am" class="btn11" onclick="calcLoan()">Calculate</button>
+        <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
+        <p id="loan-val"></p>
     </div>
     <!-- BMI Calculator -->
     <div id="bmi">
@@ -57,7 +75,7 @@
         <button id="refres" class="btn11" onclick="document.location.reload(true)">Refresh</button>
         <p id="inr-val"></p>
     </div>
-
+    
   </div>
 </div>
 <footer>&copy; This site is made by Vikas Kumar Gond</footer>
