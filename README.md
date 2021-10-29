@@ -4,3 +4,4 @@
  2. BMI Calaculator
  3. USD to INR 
  4. INR to USD 
+# Live Demo : https://vikaskrgond.github.io/col-Calc/
