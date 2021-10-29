@@ -48,7 +48,8 @@
   #usd-inr,
   #inr-usd,
   #income ,
-#loan {
+#loan ,
+footer{
     text-align: center;
     box-shadow: rgb(85, 84, 84) 10px 10px 10px 10px;
     width: 70%;
